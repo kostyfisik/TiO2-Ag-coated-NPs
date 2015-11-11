@@ -4,20 +4,12 @@
 %\documentclass[aps,preprint,showpacs,superscriptaddress,groupedaddress]{revtex4-1}  % for double-spaced preprint
 \usepackage[english]{babel}
 
-\usepackage[ascii]{inputenc}
+%\usepackage[ascii]{inputenc}
 \usepackage[T2A,T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb,amsfonts,textcomp}
-\usepackage{array}
-\usepackage{supertabular}
-\usepackage{hhline}
-\usepackage{graphicx}
-\makeatletter
-\newcommand\arraybslash{\let\\\@arraycr}
-\makeatother
-\setlength\tabcolsep{1mm}
-\renewcommand\arraystretch{1.3}
 
+\usepackage{booktabs}
 \usepackage{graphicx}% Include figure files
 \usepackage[pdftex,unicode,colorlinks, citecolor=blue,%
 filecolor=black, linkcolor=blue, urlcolor=black]{hyperref}
@@ -64,13 +56,16 @@ energy conversion applications. The striking features of $TiO_2$ including
 its high chemical stability in aqueous media, high photoactivity, earth
 abundance and environmentally benign nature strongly encourage the use
 of this material as a potential electron acceptor in light driven
-devices operating under solar radiation [1-4]. 
+devices operating under solar radiation~\cite{Sudhagar-2015,
+  Pelaez-2012, Lin-2006,Etacheri-2015}. 
 
-We used the solution of Maxwell's equations for
-spherical particles using Mie theory [5-9]. According to this theory,
-we calculate the optical efficiency parameters, used MATLAB software
-[10], such as the extinction, absorption and scattering for
-nanoparticles at different diameter and shell thickness.
+We used the solution of Maxwell's equations for spherical particles
+using Mie
+theory~\cite{Mie-1908,Rivero-2013,Ghaforyan-2014,Bilankohi-2015,Ghaforyan-2015}.
+According to this theory, we calculate the optical efficiency
+parameters, used MATLAB software~\cite{Matzler-2002}, such as the extinction,
+absorption and scattering for nanoparticles at different diameter and
+shell thickness.
 
 In this study, we focused on the optical properties of Titanium
 dioxide/ silver core/shell nanoparticles. For this reason, to compute
@@ -81,7 +76,7 @@ taken as the mean free path to calculate the dielectric function of
 the particles. The dependence of the complex dielectric function of
 metal nanoparticles on size is included by replacing the bulk
 relaxation constant in the Lorentz-Drude dielectric function by a
-radius $R$ dependent quantity as follows [11,12]:
+radius $R$ dependent quantity as follows~\cite{Kreibig-1995,Rakic-1998}:
 \begin{widetext}
 \begin{align*}
 \varepsilon(\omega,R) = \varepsilon_{bulk}(\omega) 
@@ -128,7 +123,7 @@ $$
 
 Under quasi-static conditions, the absorption $Q_{abs}$ and scattering $Q_{sca}$
 and extinction $Q_{ext}$ efficiency coefficients can be calculated from Mie
-scattering theory [13]. We analyze efficiency coefficients, which are
+scattering theory~\cite{Hulst-1957}. We analyze efficiency coefficients, which are
 the cross-section value normalized to the geometric cross-section of
 nanoparticles. Mie theory predicts about all particles, small or large,
 transparent or opaque. Mie theory allows for primary scattering from
@@ -322,9 +317,11 @@ core is 638~nm for particle with core radius of 12~nm and shell
 thickness of 52~nm and for the Ag core is 384~nm with core radius of
 10~nm and shell thickness of 38~nm.
 
-Spectrum parameters comparison for both structures is presented in Table
-1. Ag core structure has two times larger $Q_{abs}$ value at the peak but 3
-times smaller FWHM parameter comparing to $TiO_2$ core.
+Spectrum parameters comparison for both structures is presented in
+Table~\ref{tab:compare}. Ag core structure has two times larger
+$Q_{abs}$
+value at the peak but 3 times smaller FWHM parameter comparing to
+$TiO_2$ core.
 
 
 \begin{figure}[!h]
@@ -359,97 +356,31 @@ dimensions of a) $TiO_2$ core; b) Ag core; c) absorption spectra
 comparison for both structures with maximum of the IAP.\label{fig:integral}}%
 \end{figure}
 
-Table 1. Comparison of spectrum parameters for $TiO_2$ core and Ag core
-presented in Fig.~\ref{fig:integral}
 
-\begin{flushleft}
-\tablehead{}
-\begin{supertabular}{|m{1.2191598in}|m{1.2191598in}|m{1.2191598in}|m{1.2191598in}|m{1.2198598in}|}
-\hline
-Structure &
-the highest IAP value,~nm &
- $\text{Warning: No StarMath annotation}$ at peak,~nm &
-$Q_{abs}$ at peak &
-FWHM,~nm\\\hline
-$TiO_2$ core &
-638 &
-351 &
-2.21 &
-141\\\hline
-Ag core &
-384 &
-514 &
-4.4 &
-51\\\hline
-\end{supertabular}
-\end{flushleft}
-Conclusion
+\begin{table}
+  \centering
+  
+\begin{tabular}{lcc}
+\toprule
+core material & $TiO_2$ & Ag\\
+\midrule
+\textit{max}(IAP),~nm & 638 & 384 \\
+$\lambda$ at peak,~nm & 351 & 514 \\
+$Q_{abs}$ at peak & 2.21 & 4.4 \\
+FWHM,~nm & 141 & 51\\
+\bottomrule
+\end{tabular}
+\caption{Comparison of spectrum parameters for $TiO_2$ core and Ag core
+presented in Fig.~\ref{fig:integral} \label{tab:compare}}
+\end{table}
 
-In this paper, we compared absorption properties of $TiO_2/Ag$ and $Ag/TiO_2$
+In conclusion we compared absorption properties of $TiO_2/Ag$
+and $Ag/TiO_2$
 coated nanoparticle with different core/shell dimensions using Mie
 scattering theory. We show the particle with core radius of 12~nm and
 shell thickness of 51~nm has largest integral absorption parameter of
 638~nm. Such particle can be used as effective photocatalytic material
 for energy conversion applications.
 
-References
-
-P. Sudhagar, T.S. Song, A. Devadoss, J. W. Lee, M. H. Remon, C.
-Terashima, V. V. Lysak, J. Bisquert, A. Fujishima, S. Gimenez and U.G.
-Paik, Modulating the interaction between gold and $TiO_2$ nanowires for
-enhanced solar driven photoelectrocatalytic hydrogen generation,
-Physical Chemistry Chemical Physics, vol.17, 19371-19378, 2015
-
-Miguel Pelaez,~Nicholas T. Nolan,~Suresh C. Pillai,~Michael K.
-Seery,~Polycarpos Falaras, Athanassios G. Kontos,~Patrick S.M.
-Dunlop,~Jeremy W.J. Hamilton,~J.Anthony Byrne,~Kevin
-O'Shea, Mohammad H. Entezari,~Dionysios D. Dionysiou,
-A review on the visible light active titanium dioxide photocatalysts
-for environmental applications Applied Catalysis B: Environmental
-Volume 125, 21 August 2012, Pages 331{}--349
-
-Miguel Pelaez,~Nicholas
-T. Nolan,~Suresh C. Pillai,~Michael K. Seery,~Polycarpos Falaras,
-Athanassios G. Kontos,~Patrick S.M. Dunlop,~Jeremy W.J.
-Hamilton,~J.Anthony Byrne,~Kevin O'Shea, Mohammad H.
-Entezari,~Dionysios D. Dionysiou, A review on the visible light active
-titanium dioxide photocatalysts for environmental applications Applied
-Catalysis B: Environmental Volume 125, 21 August 2012, Pages 331--349
-
-Lin H. Size dependency of nanocrystalline $TiO_2$ on its optical property
-and photocatalytic reactivity exemplified by 2-chlorophenol. Appl Catal
-B Environ. 2006; 68(1):1-- 11.
-Etacheri V,. di Valentin C., Schneider J., Bahnemann D., Pillai S.C.
-Visible light activation of $TiO_2$ photocatalyst: Advanced in theory and
-experimients. J. of photochemistry and photobiology C: photochemistry
-reviews 2015 25  1-29.
-G. Mie, Annalen der Physik, 1908, 330, 377--445.
-Rivero PJ, Goicoechea J, Urrutia A, Matias IR, Arregui FJ. Multicolor
-Layer-by-Layer films using weak polyelectrolyte assisted synthesis of
-Core/Shell Nanoparticles. Nanoscale Research Letters. 2013; 8:438.
-Ghaforyan H, Ebrahimzadeh M, Ghaffary T, Rezazadeh H, Sokout Jahromi Z.
-Microwave absorbing properties of Ni nanowires grown in nanoporous
-anodic alumina templates. Chin J Phys. 2014; 52(1):233--8.
-Mohammadi BS, Ebrahimzadeh M, Ghaforyan H. Simulation of optical
-characteristics of nickel and nickel/ titanium dioxide. World Appl
-Program. 2015; 5(7):109--12.
-Ghaforyan H, Ebrahimzadeh M, Mohammadi BS. Study of the optical
-properties of nanoparticles using Mie theory. World Appl Program. 2015;
-5(4):79--82.
-Matzler C. MATLAB functions for Mie scattering and absorption. Technical
-report, Research Report No. 2002-- 08. Institute of Applied Physics,
-University of Bern. 2002; 8:5--7.
-U. Kreibig and M. Vollmer, Optical Properties of Metal Clusters,
-Springer, New York, 1995, p. 159. 
-A. D. Rakic {\textasciiacute}, A. B. Djuris \textlatin{[2C7?]}ic
-{\textasciiacute}, J. M. Elazar and M. L. Majewski, Appl. Opt., 1998,
-37, 5271--5283.
-van de Hulst H.C. {\textquotedblleft}Light Scattering by Small
-Particles{\textquotedblright}, (1957), reprinted by Dover Publication,
-New York, NY (1981).
-M. I. Tribelsky, EPL (Europhysics Letters), 2011, 94, 14004.
-C. F. Bohren and D. Huffman, Absorption and scattering of light by small
-particles, Wiley, 1983
-
-
+\bibliography{2015-Lysak-TiO2}
 \end{document}
